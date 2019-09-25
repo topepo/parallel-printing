@@ -26,3 +26,18 @@ The development version of `cli`, as of 9/2019, was used. Use `devtools:::instal
 
 Some of these packages need additional software outside of R. Each script prints the versions used for each package. 
 
+## Currrent Results
+
+Only tested on macOS so far:
+
+* No output in terminal or RStudio IDE: MPI, multicore (`doParallel`), sockets (`doParallel`), SNOW (`doSNOW`)
+
+* Output in terminal but not RStudio IDE: multicore (`doMC`), 
+
+* Output in terminal and RStudio IDE: multicore (`doFuture`)<sup>*</sup>,  multicore (`doParallel` + `doFuture`)<sup>*</sup>, MPI (`doFuture`)<sup>*</sup>, sockets (`doParallel` + `doFuture`)<sup>*</sup>, SNOW (`doSNOW` + `doFuture`)<sup>**</sup>
+
+
+
+<sup>*</sup> But `cli` output not produced in either
+
+<sup>**</sup> But `cli` output not produced RStudio IDE
