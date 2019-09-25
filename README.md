@@ -34,10 +34,10 @@ Only tested on macOS so far:
 
 * Output in terminal but not RStudio IDE: multicore (`doMC`), 
 
-* Output in terminal and RStudio IDE: multicore (`doFuture`)<sup>*</sup>,  multicore (`doParallel` + `doFuture`)<sup>*</sup>, MPI (`doFuture`)<sup>*</sup>, sockets (`doParallel` + `doFuture`)<sup>*</sup>, SNOW (`doSNOW` + `doFuture`)<sup>**</sup>
+* Output in terminal and RStudio IDE: multicore (`doFuture`)<sup>1</sup>,  multicore (`doParallel` + `doFuture`)<sup>1</sup>, MPI (`doFuture`)<sup>1</sup>, sockets (`doParallel` + `doFuture`)<sup>1</sup>, SNOW (`doSNOW` + `doFuture`)<sup>2</sup>
 
 
 
-<sup>*</sup> But `cli` output not produced in either
+<sup>1</sup> But `cli` output not produced in either
 
-<sup>**</sup> But `cli` output not produced RStudio IDE
+<sup>2</sup> But `cli` output not produced RStudio IDE
