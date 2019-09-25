@@ -28,7 +28,7 @@ Some of these packages need additional software outside of R. Each script prints
 
 ## Currrent Results
 
-Only tested on macOS so far:
+Tested on macOS and Windows 10 so far:
 
 * No output in terminal or RStudio IDE: MPI, multicore (`doParallel`), sockets (`doParallel`), SNOW (`doSNOW`)
 
